@@ -20,4 +20,4 @@ with open("diario.txt", "a", encoding="utf-8") as arquivo:
 #printar o arquivo
 with open("diario.txt", "r", encoding="utf-8") as arquivo:
         for numero, linha in enumerate(arquivo, start = 1):
-        print (f"{numero}: {linha.strip()}")
+            print (f"{numero}: {linha.strip()}")
