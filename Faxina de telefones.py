@@ -1,7 +1,7 @@
 import csv as txt
 import re
 
-with open("telefones.txt", newline="", encoding="utf-8") as f:
+with open("telefones.csv", newline="", encoding="utf-8") as f:
     for contato in  csv.DictReader(f):
         numero = contato["telefone"]
         numeros = re.sub(r"\D", "", numero)
